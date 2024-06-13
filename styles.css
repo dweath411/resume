@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-family: 'Press Start 2P', cursive;
     margin: 0;
@@ -65,12 +67,6 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
-}
-
-ul li {
-    background: url('checkmark.png') no-repeat left center;
-    padding-left: 20px;
-    margin-bottom: 10px;
 }
 
 body.dark-mode {

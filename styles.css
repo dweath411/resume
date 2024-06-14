@@ -5,11 +5,25 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #1d1f21, #4b6cb7, #182848);
+    background-size: 400% 400%;
     color: #c5c8c6;
     text-shadow: 1px 1px 0 #000;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header {
@@ -89,7 +103,21 @@ ul {
 
 body.dark-mode {
     background: linear-gradient(135deg, #000, #434343);
+    background-size: 400% 400%;
     color: #fff;
+    animation: gradientBackgroundDark 15s ease infinite;
+}
+
+@keyframes gradientBackgroundDark {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 body.dark-mode header {
@@ -105,3 +133,4 @@ body.dark-mode header button {
     background: linear-gradient(90deg, #000, #434343);
     color: #fff;
 }
+
